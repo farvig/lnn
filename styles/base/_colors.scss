@@ -1,0 +1,24 @@
+
+// Accent Colors
+$color-primary:      #027cd8; // Blue
+$color-secondary:    #888; // middle gray
+$color-tertiary:     #EDEFED; // light gray
+
+$color-light:        #fff;
+$color-dark:         #333;
+
+// Fonts
+$color-font-base:    #555;
+$color-body:         #f1f1f1;
+
+// Borders
+$color-border-light: darken($color-body, 10%);
+$color-border-dark:  darken($color-body, 25%);
+
+// Shadows
+$color-shadow-light: darken($color-body, 5%);
+$color-shadow-dark:  darken($color-body, 15%);
+
+// States / Alerts
+$color-error:        #C23434;
+$color-valid:		 #53962e;

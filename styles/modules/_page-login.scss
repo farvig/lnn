@@ -1,0 +1,136 @@
+.login-container{
+    margin: 5em auto;
+    padding: 5em 0 0;
+    text-align: center;
+    > p{
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    #loginform{
+        border:1px solid #666;
+        display: table;
+        margin: 0 auto 1em;
+
+        input[type="text"],
+        input[type="password"]{
+            background-color: #fff;
+            border-bottom:1px solid #666;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            padding: 1em;
+            width: 100%;
+        }
+        p{
+            float: left;
+            margin: 0;
+            text-align: left;
+        }
+
+        .login-remember{
+            height: 40px;
+            padding: .5em;
+            padding-left: 1em;
+            position: relative;
+            width: 65%;
+        }
+        .login-submit{
+            float: right;
+            width: 35%;
+        }
+    }
+}
+
+.login-container #loginform .login-username,
+.login-container #loginform .login-password{
+    position: relative;
+    width: 50%;
+    @include media(portable){
+        display: block;
+        width: 100%;
+        input[type="text"],
+        input[type="password"]{
+            border-bottom:1px solid #666;
+        }
+    }
+}
+
+.login-container .login-submit input{
+    background-color: #709B4C;
+    border:none;
+    color: #fff;
+    display: block;
+    height: 40px;
+    padding: 0;
+    width: 100%;
+}
+
+.login-container .login-submit input:hover{
+	cursor: pointer;
+    opacity: .9;
+}
+
+.login-container #loginform .login-username label,
+.login-container #loginform .login-password label{
+    color:$color-secondary;
+    font-size:.8em;
+    position: absolute;
+    top:5px;
+    left:1em;
+}
+
+.login-container #loginform .login-username input,
+.login-container #loginform .login-password input{
+    padding-top: 1.3em;
+}
+
+.login-container #loginform .login-username input{
+    border-right: 1px solid #666;
+}
+
+.message{
+    padding: $spacing/2;
+    &.message--error{
+        background-color:lighten($color-error, 50);
+        border:1px solid $color-error;
+        color:$color-error;
+    }
+}
+
+.login-container{
+    .message{
+        margin:0 auto $spacing/2;
+        max-width:37em;
+    }
+}
+
+// Inpage login form
+
+.inpage-login-form{
+    @extend %clearfix;
+
+    .login-username input,
+    .login-password input{
+        width: 100%;
+    }
+    .login-submit{
+        text-align: right;
+    }
+    input[type="submit"]{
+        background-color: $color-primary;
+        border-radius:4px;
+        clear:both;
+        color:$color-light;
+        display: inline-block;
+        float: none;
+        padding:.4em 1.5em;
+        &:hover{
+            background-color: darken($color-primary, 5%);
+    color:#fff;
+        }
+    }
+}
+.no-profile-wrapper{
+    clear: both;
+}

@@ -1,0 +1,173 @@
+form{}
+fieldset{
+	border:none;
+	padding: 0;
+}
+legend{}
+
+label{}
+
+input,
+select,
+textarea{
+	background:$color-light;
+	border:1px solid rgba(136, 136, 136, 0.55);
+	border-radius:0;
+	display: block;
+	font-size:1em;
+	padding:1em $spacing;
+	appearance: none;
+	-webkit-appearance:none;
+	-moz-appearance: none;
+
+	&.error{
+		background:$color-light url('img/icon-error.png') 90% center no-repeat;
+		border-color:$color-error;
+	}
+	&.valid{
+		background:$color-light url('img/icon-valid.png') 90% center no-repeat;
+		border-color:$color-valid;
+	}
+}
+
+input[type="file"]{
+	background: transparent;
+	border:none;
+	padding: 1em 0;
+}
+
+input[type="checkbox"],
+input[type="radio"]{
+	display: inline-block;
+}
+
+input[type="radio"]{
+	appearance: radio;
+	-webkit-appearance:radio;
+	-moz-appearance: radio;
+}
+input[type="checkbox"]{
+	appearance: checkbox;
+	-webkit-appearance:checkbox;
+	-moz-appearance: checkbox;
+}
+
+textarea {
+	min-height: 200px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+	border:1px solid $color-primary;
+	outline:none;
+}
+
+input[type="submit"]{
+	clear: both;
+	display: block;
+}
+input[type="submit"]:hover{}
+
+select{
+	background: #fff url("img/select-arrow.png") 90% center no-repeat;
+	vertical-align:top;
+	@include media(portable){
+		width: 100%;
+	}
+}
+
+
+// Inline input fields
+.inline-element{
+	display: inline-block !important;
+	line-height:1.4em;
+	margin: 0 0 0 -6px;
+	padding:$spacing/2 $spacing;
+	&.btn{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+}
+
+// Edit post page
+.edit-post-form{
+	fieldset{
+		margin-bottom: $spacing;
+	}
+}
+
+#post_title,
+#course_tags,
+#location_id,
+#contact_link{
+	width: 100%;
+}
+
+#course_status{
+	width: 20%;
+	@include media(portable){
+		width:100%;
+	}
+}
+
+#course_zipcode{
+	@include media(portable){
+		width:100%;
+	}
+}
+
+#course_price{
+	display: inline-block;
+	width: 20%;
+	@include media(portable){
+		width:30%;
+	}
+}
+
+// Edit profile page
+.form-edit-user{
+	padding-top: 2em;
+	input[type="text"],
+	input[type="password"]{
+		padding:1em;
+		width: 100%;
+	}
+	.attachment-thumbnail{
+		margin-bottom: 10px
+	}
+	.user_profile_image-thumbnail{
+		border-radius:50%;
+	}
+	.user_cover_image-thumbnail{
+		height: 150px;
+  		width: auto;
+	}
+}
+
+.delete-image{
+	color: $color-error;
+	&:before{
+		margin-right: 3px;
+	}
+}
+
+#poststuff{
+	max-width: 100%;
+	min-width: 0 !important;
+}
+
+.form-submit{
+	clear: both;
+	margin-bottom: 2em;
+	padding: 0 $spacing/2;
+	text-align: right;
+	.btn{
+		display: inline-block;
+	}
+}
+
+.is-required{
+	color:$color-error;
+}

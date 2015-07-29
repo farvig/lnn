@@ -1,0 +1,116 @@
+.create-profile-container{
+	background-color:#fff;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+	margin:-5em auto 2em;
+	max-width: 100%;
+	padding: 2rem;
+	position: relative;
+	width: 35em;
+}
+
+.create-profile__title{
+	font-size:2rem;
+	margin-bottom: 5px;
+}
+
+.create-profile__title,
+.create-profile__content{
+	text-align: center;
+}
+
+.rcp_header{
+	display: none;
+}
+.rcp_form{
+	.rcp_user_fieldset{
+		margin: 0;
+	}
+	p{
+		position: relative;
+	}
+	input[type="text"],
+	input[type="password"]{
+		padding: 1.5rem 1rem 1rem 1rem;
+		width: 100%;
+	}
+	label{
+		color:$color-secondary;
+	    font-size:.8rem;
+	    position: absolute;
+	    top:8px;
+	    left:1rem;
+	    &:after{
+	    	color:$color-error;
+	    	content:"*";
+	    }
+	}
+}
+
+#rcp_registration_form{
+	@extend %clearfix 
+}
+
+#rcp_user_login_wrap{
+	display: none;
+}
+
+#rcp_required_field_wrapper{
+	float: left;
+	width: 50%;
+	label{
+		color:$color-dark;
+		font-size:1rem;
+		line-height: 1rem;
+		top:4px;
+	}
+	@include media(portable){
+		float: none;
+		width: 100%;
+	}
+}
+
+#rcp_submit_wrap{
+	float: right;
+	text-align: right;
+	width: 50%;
+	@include media(portable){
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+}
+
+#rcp_submit{
+	background-color: $color-primary;
+	border:1px solid $color-primary;
+	border-radius:4px;
+	color:#fff;
+	clear:both;
+	display: inline-block;
+	float: none;
+	padding:.4em 1.5em;
+	&:hover{
+		background-color: darken($color-primary, 5%);
+		border-color:darken($color-primary, 5%);
+		color:#fff;
+	}
+	@include media(portable){
+		width: 100%;
+	}
+}
+
+.create-profile-selling-points{
+	background-color: $color-light;
+	padding:$spacing*1.5 0;
+}
+
+.create-profile-selling-points__content{
+	margin:$spacing auto;
+	max-width:60em;
+	@include media(portable){
+		padding: $spacing;
+	}
+	h2{
+		margin-bottom: 5px;
+	}
+}

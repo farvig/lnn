@@ -1,0 +1,20 @@
+.aside-sub-nav{
+	ul{
+		list-style-type: none;
+		margin: 0 0 2em 0;
+		padding: 0;
+		li{
+			&.current_page_item a{
+				color:$color-dark;
+			}
+			a{
+				border-bottom:1px solid #ccc;
+				display: block;
+				padding: 5px 0;
+				&:hover{
+					color:$color-dark;
+				}
+			}
+		}
+	}
+}

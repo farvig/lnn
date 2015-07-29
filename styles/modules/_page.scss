@@ -1,0 +1,170 @@
+.breadcrumb{
+	font-size:.8rem;
+	padding:$spacing 0 $spacing/2;
+}
+.breadcrumb-divider{
+	color:$color-secondary;
+}
+
+.page-header{
+	background-color:$color-tertiary;
+	border-bottom:1px solid #ddd;
+	padding-bottom: .8em;
+	padding-top: 2em;
+	&.page-header--profile{
+		padding-top: 0;
+	}
+}
+
+.page-heder-cover{
+	background-color:#92B3CD;
+	background-size:cover;
+	background-position: center center;
+	height: 290px;
+	width: 100%;
+	text-align: center;
+	.btn{
+		margin-top: 8em;
+	}
+}
+
+.page-header--profile__content{
+	margin-top: -60px;
+}
+
+.page-header--profile .post-teacher__portrait{
+	vertical-align:bottom;
+	margin-right: 1em;
+}
+
+.page-content-container{
+	padding-top: 3em; 
+}
+
+.page-title{
+	line-height: 1.2em;
+	margin-bottom: 0;
+}
+
+.page-date{
+	clear: both;
+	color:$color-secondary;
+	display: block;
+}
+
+.post-price{}
+.teacher{
+	position: absolute;
+	right:$spacing/2;
+	top:-1em;
+	text-align: center;
+	width: 125px;
+	&:hover{
+		border-bottom:none;
+	}
+	@include media(portable){
+		width: 100px;
+	}
+}
+.post-teacher__portrait{
+	border:4px solid $color-tertiary;
+	border-radius:50%;
+	height: 125px;
+	width: 125px;
+	@include media(portable){
+		height: 100px;
+		width: 100px;
+	}
+}
+.post-teacher__name{
+	font-size:$font-size-medium;
+	line-height:1.2em;
+}
+
+.post-location{
+	clear: both;
+	display: block;
+}
+
+.post-meta{
+	border-bottom:1px solid $color-tertiary;
+	border-top:1px solid $color-tertiary;
+	margin-bottom: 2em;
+	padding:.4em 0;
+	@extend %clearfix
+}
+
+.contact-teacher-container{
+	background-color:$color-tertiary;
+	border-top:1px solid #ccc;
+	padding: 2em 0;
+}
+
+.contact-form{
+	@extend %clearfix;
+	width: 60%;
+	@include media(portable){
+		width: 100%;
+	}
+
+	label span{
+		color:$color-error;
+	}
+	
+	.text-wrapper,
+	.email-wrapper{
+		float: left;
+		margin-bottom: $spacing;
+		width: 50%;
+		@include media(portable){
+			float: none;
+			padding: 0 !important;
+			width: 100%;
+		}
+	}
+	.text-wrapper{
+		padding-right: $spacing/2;
+	}
+	.email-wrapper{
+		padding-left: $spacing/2;
+	}
+	.textarea-wrapper{
+		margin-bottom: $spacing;
+	}
+	input[type="text"],
+	textarea{
+		width: 100%;
+	}
+	.contact-submit{
+		max-width: 100%;	
+		text-align: right;
+		.cta{
+			border-radius: 3px;
+			display: inline-block;
+		}
+	}
+}
+
+.post-teacher-container{
+	padding: 4em 0 3em;
+	@include media(portable){
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+}
+
+.share-bar{
+	line-height: 1.6em;
+}
+
+// Post listing
+
+.delete-post{
+	color:$color-error;
+}
+
+
+// Search resulsts
+.search-results{
+	padding-top: 2rem;
+}

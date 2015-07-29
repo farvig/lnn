@@ -1,0 +1,35 @@
+.partners-content{
+	padding: $spacing 0;
+}
+.partner-item{
+	.square{
+		position: relative;
+	}
+}
+
+.partner-item__content{
+	background-color: rgba(0,0,0,.4);
+	padding:$spacing/2 0;
+	position: absolute;
+	top:40%;
+	text-align: center;
+	width: 100%;
+}
+
+.partner-item__title{
+	color:$color-light;
+	margin-bottom: 0;
+}
+
+.partner-item__link{
+	font-weight:bold;
+	&:hover{
+		color:$color-light;
+		text-decoration: underline;
+	}
+}
+
+.partner-item__image{
+	height: auto;
+	width: 100%;
+}

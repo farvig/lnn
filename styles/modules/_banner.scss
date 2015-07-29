@@ -1,0 +1,45 @@
+.banner-container{
+	background: url(img/banner-frontpage.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height:520px;
+	.link{
+		border-bottom:none;
+		clear: both;
+		display: block;
+		font-size:1.2rem;
+		margin-top: $spacing/2;
+	}
+	&.banner-container--signup{
+		height: 300px;
+		.banner__content{
+			max-width: 60em;
+			padding-top:7rem;
+		}
+	}
+}
+
+.banner__content{
+	font-size:$font-size-large;
+	max-width: 470px;
+	margin:0 auto;
+	padding-top: 250px;
+	text-align: center;
+}
+
+.banner__title{
+	color:#f7f7f7;
+	font-size:1.5em;
+	font-weight:$font-weight-heavy;
+	line-height: 1.2em;
+	max-width: 100%;
+	text-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+
+.banner-cta:hover{
+	background:rgba(2,124,216,.6);
+	border-color:#fff;
+	color:#fff;
+}

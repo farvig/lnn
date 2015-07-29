@@ -1,0 +1,37 @@
+.cta-color-band{
+	background-color:#78b9ea;
+	color:$color-light;
+	padding-bottom:3em;
+	padding-top:3em;
+	text-align: center;
+
+	.btn--section{
+		background-color: $color-light;
+		&:hover{
+			background-color: $color-primary;
+			color:$color-light;
+		}
+	}
+}
+
+.cta-color-band__title{
+	font-size: $font-size-xlarge;
+	max-width: 100%;
+	text-align: center;
+}
+
+.cta-color-band-item{
+	text-align: center;
+}
+
+.cta-color-band-item__title{
+	font-size:$font-size-large;
+	margin-bottom: 0;
+}
+.cta-color-band-item__image{
+	border-radius:50%;
+}
+.cta-color-band-item__text{
+	font-size:$font-size-medium;
+	font-weight:$font-weight-heavy;
+}

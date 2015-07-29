@@ -1,0 +1,77 @@
+
+.teacher-groups-nav{
+	padding:$spacing/2 0;
+	a{
+		display: inline-block;
+		height: 1.4em;
+		text-align: center;
+		width:1em;
+	}
+	.selected-view{
+		background-color: $color-primary;
+		color:#fff;
+	}
+	@include media(portable){
+		position: fixed;
+		left:3px;
+		z-index:100;
+		a{
+			border-bottom: 1px solid #ccc;
+			display: block;
+			margin-bottom: 5px;
+		}
+	}
+}
+
+.teacher-list-items{
+	padding:$spacing/2 0;
+}
+.teacher-group-item{
+	display: none;
+	position: relative;
+}
+
+.teacher-list-item__content{
+	background-color:#fff;
+	box-shadow: 0 2px 2px rgba(0,0,0,.3);
+	padding:$spacing;
+}
+
+.teacher-list-item__image-wrapper{
+	@include media(portable){
+		display: block;
+		text-align: center;
+	}
+}
+
+.teacher-list-item__image{
+	border-radius:50%;
+	height:100px;
+	position: absolute;
+	top:$spacing;
+	left:$spacing;
+	width: 100px;
+	@include media(portable){
+		margin:auto 0;
+	    position: relative;
+	    top:auto;
+	    left:auto;
+	}
+}
+.teacher-list-item__name,
+.teacher-list-item__bio,
+.teacher-list-item__courses{
+	padding-left: 110px;
+	@include media(portable){
+	    padding-left: 0px;
+	}
+}
+
+.teacher-list-item__name{
+	font-size:1.6rem;
+	margin-bottom: $spacing/2;
+	@include media(portable){
+		display: block;
+		text-align: center;
+	}
+}

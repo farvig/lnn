@@ -1,0 +1,50 @@
+.site-footer{
+	background-color:#222;
+	color:$color-light;
+	padding-top: 0 $spacing*2 $spacing*2;
+}
+
+// Fixes for admin styles on edit profile page
+.site-footer{ 
+	.social{
+		background-color:$color-primary;
+		color:#fff;
+		font-size:$font-size-large;
+		margin-bottom: $spacing;
+		padding:$spacing 0;
+		text-align: center;
+		a{
+			.icon-facebook{
+				background-color: transparent;
+			}
+			border:1px solid $color-light;
+			border-radius:3px;
+			color:#fff;
+			opacity: .8;
+			&:hover{
+				border:1px solid $color-light;
+				opacity: 1;
+				text-decoration: none;
+			}
+		}
+	}
+	h3{
+		color:$color-light;
+	}
+	a{
+		color: $color-primary;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+	.footer-contact-info{
+		background-color:#111;
+		font-size: .8rem;
+		padding: $spacing;
+		text-align: center;
+		p{
+			margin-bottom: 0;
+			max-width: 100%;
+		}
+	}
+}

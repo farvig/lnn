@@ -1,0 +1,31 @@
+.tag-list-container{
+	padding-bottom:$spacing;
+
+	.live-search-container{
+		margin-bottom: $spacing/2;
+		text-align: center;
+	}
+
+	.js-live-search{
+		display: inline-block;
+		margin-left: 1rem;
+		padding: .5rem;
+	}
+	.tag-list-item{
+		background-color: #027CD8;
+		color: #FFF;
+		padding: 3px .6em 3px 5px;
+		margin-bottom: 4px;
+		display: inline-block;
+		border-radius: 3px;
+		&:before{
+			background-color: $color-tertiary;
+			border-radius: 50%;
+			display: inline-block;
+			content:" ";
+			height: 10px;
+			margin-right: 5px;
+			width: 10px;
+		}
+	}
+}

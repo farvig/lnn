@@ -1,0 +1,21 @@
+.site-header{
+	background:$color-light;
+	box-shadow:0 2px 5px rgba(0,0,0,.1);
+	padding-bottom:0;
+	padding-top:1em;
+	position: fixed;
+	top:0;
+  	width: 100%;
+  	z-index: 9999;
+	@extend %clearfix;
+	@include media(portable){
+		position: relative;
+		top:auto;
+	}
+}
+
+.site-logo img{
+	float: left;
+	height:51px;
+	width: auto;
+}
